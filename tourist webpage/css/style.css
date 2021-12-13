@@ -10,3 +10,67 @@ body{
     background-size: 100% 100%;
     background-position: center center;
 }
+.main-nav{
+    width:100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+}
+.main-nav ul.main-menu{
+    display:flex ;
+    margin-right:50px ;
+}
+.main-menu li{
+    list-style: none;
+    margin-right: 35px;
+}
+.main-menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-menu a:hover{
+    background-color: azure;
+}
+.main-nav h2{
+    color: whitesmoke;
+    padding-right: 2px;
+}
+.showcase{
+    height:70%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    word-spacing:0.5rem ;
+}
+.btn1,.btn2{
+    text-decoration: none;
+    color:black;
+    padding: 0 4px;
+    background-color:rgb(124,234,241) ;
+}
+.btn2{
+    background-color: #ffff;
+}
+.showcase a:hover{
+    background-color:hsl(0, 39%, 91%) ;
+}
+.showcase p,h1{
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+.animate_content:after{
+    content:"";
+    color:rgb(124,234,241);
+    font-size: 2rem;
+    animation:example 4s infinite ;
+}
+@keyframes example{
+       0%{content:"Goa";}
+       25%{content:"Gujrat";}
+       50%{content:"Madhay Pradesh";}
+       75%{content:"Keral";}
+       100%{content:"Uttrakhand";}
+}
